@@ -1,9 +1,11 @@
 def turn_count(board)
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  counter = 0
-  board.each do |turn|
-    counter += 1
+  turns = 0
+  board.each do |token|
+    if token = "X" || token = "O"
+    turns += 1
+    end
   end
+  turns
 end
 
 def current_player(board)
